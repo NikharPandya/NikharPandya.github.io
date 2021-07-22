@@ -25,8 +25,8 @@ footer ul li a {
   font-size: 1.3em;
 }
 
-.skill svg:hover {
-  transform: scale(1.5);
+.hov:hover {
+  transform: scale(1.1);
   transition: ease-in-out;
 }
 .skill svg {
@@ -36,27 +36,91 @@ footer ul li a {
 .fa-html5 {
   color: #e44d26;
 }
+.html {
+  background: rgba(228, 77, 38, 0.3);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 60px 60px;
+}
 
 .fa-css3-alt {
   color: #2965f1;
+}
+.css {
+  background: rgba(41, 101, 241, 0.3);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 60px 60px;
 }
 
 .fa-js {
   color: #f0db4f;
 }
+.js {
+  background: rgba(240, 219, 79, 0.3);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 60px 60px;
+}
 
 .fa-react {
   color: #61dbfb;
+}
+.react {
+  background: rgba(97, 219, 251, 0.3);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 60px 60px;
 }
 
 .bi-bootstrap {
   color: #7952b3;
 }
-
-.fa-database {
-  color: darkgray;
+.bootstrap {
+  background: rgba(121, 82, 179, 0.3);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 60px 60px;
+}
+.git {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 60px 60px;
 }
 
-.fa-wordpress-simple {
+.fa-database {
+  color: #a9a9a9;
+}
+.data {
+  background: rgba(169, 169, 169, 0.3);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 60px 60px;
+}
+
+.skill .fa-wordpress-simple {
   color: #00749c;
+}
+.wordpress {
+  background: rgba(0, 116, 156, 0.3);
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 60px 60px;
+}
+
+* {
+  /* border: 1px red solid; */
+}
+
+.skill div {
+  background-color: transparent;
 }
