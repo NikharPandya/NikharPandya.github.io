@@ -1,14 +1,14 @@
-import express, { static } from "express";
-import cors from "cors";
-import { createTransport } from "nodemailer";
-import { Form } from "multiparty";
+const express = require("express");
+const cors = require("cors");
+const nodemailer = require("nodemailer");
+const multiparty = require("multiparty");
 require("dotenv").config();
 
 const app = express();
 
 app.use(cors({ origin: "*" }));
 
-app.use("/public", static(process.cwd() + "/public"));
+app.use("/public", express.static(process.cwd() + "/public"));
 
 app.route("/").get(function (req, res) {
   res.sendFile(process.cwd() + "/index.html");
@@ -19,8 +19,8 @@ app.listen(PORT, () => {
   console.log(`listening on port ${PORT}...`);
 });
 
-const transporter = createTransport({
-  host: "Gmail",
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
   port: 587,
   auth: {
     user: process.env.EMAIL,
@@ -37,7 +37,7 @@ transporter.verify(function (error, success) {
 });
 
 app.post("/send", (req, res) => {
-  let form = new Form();
+  let form = new multiparty.Form();
   let data = {};
   form.parse(req, function (err, feilds) {
     console.log(feilds);
