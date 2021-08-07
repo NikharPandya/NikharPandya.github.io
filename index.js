@@ -8,7 +8,7 @@ const formEvent = form.addEventListener("submit", (event) => {
 });
 
 const senMail = (mail) => {
-  fetch("/send", {
+  fetch("http://nikharpandya.com/send", {
     method: "post",
     body: mail,
   }).then((Response) => {
